@@ -46,6 +46,7 @@ var cli = meow(
     '  -t, --text   treat input as plain-text (not markdown)',
     '  -l, --html   treat input as html (not markdown)',
     '  -d, --diff   ignore unchanged lines (affects Travis only)',
+    '  -i, --ignore custom ignore file',
     '  --stdin      read from stdin',
     '',
     'When no input files are given, searches for markdown and text',
@@ -65,6 +66,7 @@ var cli = meow(
       html: {type: 'boolean', alias: 'l'},
       diff: {type: 'boolean', alias: 'd'},
       quiet: {type: 'boolean', alias: 'q'},
+      ignore: {type: 'string', alias: 'i'},
       why: {type: 'boolean', alias: 'w'}
     }
   }
@@ -97,7 +99,7 @@ engine(
     streamError: new PassThrough(),
     rcName: '.alexrc',
     packageField: 'alex',
-    ignoreName: '.alexignore',
+    ignoreName: cli.flags.ignore || '.alexignore',
     silentlyIgnore: silentlyIgnore,
     frail: true,
     defaultConfig: transform()
