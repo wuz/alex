@@ -16,21 +16,19 @@ let us know!
 
 ## Table of Contents
 
-- [Contributing](#contributing)
-  - [Table of Contents](#table-of-contents)
-  - [Ecosystem](#ecosystem)
-  - [Trying out your local changes](#trying-out-your-local-changes)
-  - [Running tests](#running-tests)
-  - [Contributions](#contributions)
-    - [Improve documentation](#improve-documentation)
-    - [Improve issues](#improve-issues)
-    - [Give feedback on issues](#give-feedback-on-issues)
-    - [Write code](#write-code)
-    - [Website contributions](#website-contributions)
-    - [Adding profanities and other words](#adding-profanities-and-other-words)
-  - [Submitting an issue](#submitting-an-issue)
-  - [Submitting a pull request](#submitting-a-pull-request)
-  - [Resources](#resources)
+*   [Ecosystem](#ecosystem)
+*   [Trying out your local changes](#trying-out-your-local-changes)
+*   [Running tests](#running-tests)
+*   [Contributions](#contributions)
+    *   [Improve documentation](#improve-documentation)
+    *   [Improve issues](#improve-issues)
+    *   [Give feedback on issues](#give-feedback-on-issues)
+    *   [Write code](#write-code)
+    *   [Website contributions](#website-contributions)
+    *   [Adding profanities and other words](#adding-profanities-and-other-words)
+*   [Submitting an issue](#submitting-an-issue)
+*   [Submitting a pull request](#submitting-a-pull-request)
+*   [Resources](#resources)
 
 ## Ecosystem
 

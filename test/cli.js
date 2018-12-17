@@ -126,6 +126,16 @@ test('quiet on nok files', function(t) {
   })
 })
 
+test('ignore (optional)', function(t) {
+  var fp = path.join(__dirname, 'fixtures', 'binary', 'two.md')
+  var customIgnorePath = path.join(__dirname, 'fixtures', 'customignore')
+  return execa
+    .stderr('./cli.js', [fp, `--ignore ${customIgnorePath}`])
+    .then(function(result) {
+      t.is(result, '')
+    })
+})
+
 test('binary (default)', function(t) {
   var rp = path.join('test', 'fixtures', 'binary', 'two.md')
 
